@@ -1,0 +1,36 @@
+[
+    {
+        "members": [
+            "Jimmy",
+            "Eleni"
+        ],
+        "creation_date": 2014,
+        "adress": {
+            "country": "France",
+            "city": "Grenoble"
+        }
+    },
+    {
+        "members": [
+            "Eleni",
+            "Christine"
+        ],
+        "creation_date": 2008,
+        "adress": {
+            "country": "Portugal",
+            "city": "Coimbra"
+        }
+    },
+    {
+        "members": [
+            "Lil Random",
+            "HHH",
+            "Doll"
+        ],
+        "creation_date": 2019,
+        "adress": {
+            "country": "USA",
+            "city": "Chicago"
+        }
+    }
+]

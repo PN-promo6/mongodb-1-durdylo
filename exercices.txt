@@ -1,0 +1,21 @@
+ex1 : use twisted_DB
+ex2 : show databases 
+ex3 : use crooked_db ; Sdb.createCollection("users") ; show collections
+ex4 : use fake_db ; db.createCollection("fake_users") ; db.createCollection("fake_customers") ; show collections
+ex5 : db.fake_users.insert({name: "Mick", city:"Chicago"})
+ex6 : use magic_db ; db.createCollection("magic_users") ; db.magic_users.insert({name:"Johnson"}) ; db.magic_users.find()
+ex7 : db.createCollection("magic_products") ; db.magic_products.insert([{name:"Crazy wine"} , {name: "Weird Shoes"}]); db.magic_products.find() ; db.magic_products.findOne()
+ex8 : db.users.find().pretty()
+ex9 : db.users.find({"age": 20})
+ex10 : db.products.find({"on_sale" : true , "price": 100})
+ex11 : db.bands.find({"members":"Eleni"})
+ex12 : db.bands.find({"names":{$in:["Eleni","Doll"]}})
+ex13 : db.bands.find({"creation_date":{$lt:2010}})
+ex14 : db.bands.find({"creation_date":{$gt:2010},"adress.city" : "Coimbra"})
+ex15 : db.players.find({"team" : "Seattle Supersonics"})
+ex16 : db.players.find({"jerseyNumber" : 40})
+ex17 : db.players.find({"previousTeams": "Chicago Bulls" })
+ex18 : db.players.find({"previousTeams": {$in:["Chicago Bulls","Miami Heat"]}})
+ex19 : db.players.find({"previousTeams": {$all:["Orlando Magic","New York Knicks"]}})
+ex20 : db.players.find({"age":{$gt:30}})
+ex21 : db.players.find({"birthPlace.country" : "Spain"})

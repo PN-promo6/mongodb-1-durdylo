@@ -1,0 +1,7 @@
+ex1 : db.restaurants.find()
+ex2 : db.restaurants.find({},{"restaurant_id" : 1,"name":1,"borough":1,"cuisine" :1});
+ex3 : db.restaurants.find({},{"restaurant_id" : 1,"name":1,"borough":1,"cuisine" :1,"_id":0});
+ex4 : db.restaurants.find({},{"restaurant_id" : 1,"name":1,"borough":1,"address.zipcode" :1,"_id":0});
+ex5 : db.restaurants.find({"borough": "Bronx"});
+ex6 : db.restaurants.find({"borough": "Bronx"}).limit(5);
+ex7 : db.restaurants.find({"borough": "Bronx"}).skip(5).limit(5);
